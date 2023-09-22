@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  h1{
+    text-align: center;
+    color: white;
+  }
+  .calculator {
+    max-width: 600px;
+    background: linear-gradient(45deg, #bc2a8d, #e95950, #fccc63, #aa3dc8, #8a3ab9);
+    margin: auto;
+    width: 100%px;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+  
+  #display {
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    width: calc(100% - 22px);
+  }
+  
+
+  /* #display {
+    grid-column: span 4;
+    padding: 15px;
+    font-size: 28px;
+    margin-bottom: 20px;
+  } */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+
+  
+  
+  button:hover {
+    background-color: #3498db; /* Change the hover background color here */
+    color: white; /* Change the hover text color here */
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  button.operator {
+    background-color: #FF8C00; /* Change the operator button color here */
+    color: white;
+  }
+  
+  button.number {
+    background-color: #2ecc71; /* Change the number button color here */
+    color: white;
+  }
+  button.equal {
+    grid-column: span 3; /* Make the button span three columns */
+  }
